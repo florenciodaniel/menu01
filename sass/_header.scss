@@ -97,6 +97,12 @@ $color-link:rgba(255, 255, 255,1);
 }
 
 @media (min-width:480px) { 
+
+}
+@media (min-width:640px) { 
+
+}
+@media (min-width:768px) { 
     .ul-logo{
         width: 20%;
     }
@@ -140,12 +146,6 @@ $color-link:rgba(255, 255, 255,1);
     .inativo{
         display: flex;
     }
-
-}
-@media (min-width:640px) { 
-
-}
-@media (min-width:768px) { 
 
 }
 @media (min-width:1024px) { 
