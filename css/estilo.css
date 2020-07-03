@@ -1,0 +1,247 @@
+/*///////////////// RESET//////////////////////////////////////////////*/
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  /* a cada 1 rem sera igual a 10 pixels*/
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/*///////////////// BOOT //////////////////////////////////////////////*/
+.clear {
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 5px;
+  background-color: black;
+}
+
+.naoMostrar {
+  display: none;
+}
+
+.naoAparecer {
+  visibility: hidden;
+}
+
+/*HEADER*/
+@media (min-width: 320px) {
+  #header-topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    transition: top 0.8s;
+    z-index: 600;
+    background-color: #5695f5;
+    padding: 10px;
+  }
+  #header-topo .nav-topo {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #header-topo .nav-topo .ul-logo {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #header-topo .nav-topo .ul-logo a li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+  }
+  #header-topo .nav-topo .ul-logo a li p {
+    font-size: 1.6rem;
+    margin-right: 10px;
+    font-weight: 900;
+    padding: 8px;
+    color: white;
+    background-color: blue;
+  }
+  #header-topo .nav-topo .ul-logo a li p span {
+    color: red;
+  }
+  #header-topo .nav-topo .ul-logo a li img {
+    height: 100%;
+    border: 1px solid #1390cf;
+    background-color: rgba(19, 144, 207, 0.6);
+    border-radius: 3px;
+  }
+
+  #menu_img {
+    width: 30%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu_img img {
+    height: 100%;
+    border: 1px solid #1390cf;
+    background-color: rgba(19, 144, 207, 0.6);
+    border-radius: 3px;
+  }
+
+  .ul-link {
+    background-color: #5695f5;
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    /*   justify-content: center;*/
+    align-items: center;
+    position: fixed;
+    top: 0;
+    font-size: 3rem;
+    z-index: -1;
+    padding-top: 12vh;
+  }
+  .ul-link a li {
+    color: white;
+    padding: 8px;
+  }
+
+  .ativo {
+    display: flex;
+  }
+
+  .inativo {
+    display: none;
+  }
+}
+@media (min-width: 480px) {
+  .ul-logo {
+    width: 20%;
+  }
+
+  #menu_img {
+    display: none;
+  }
+
+  .ul-link {
+    background-color: rgba(26, 169, 240, 0);
+    width: 80%;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    position: relative;
+    top: 0;
+    z-index: 400;
+    padding-top: 0;
+  }
+
+  .ul-link li {
+    border: 1px solid #1390cf;
+    background-color: rgba(19, 144, 207, 0.6);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 100%;
+    margin-top: 0;
+  }
+
+  .inativo {
+    display: flex;
+  }
+}
+/*BANNER*/
+@media (min-width: 320px) {
+  .banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/woman-holding-flowers-1308882.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+/*SERVICOS*/
+@media (min-width: 320px) {
+  .servicos {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/woman-in-green-long-sleeve-shirt-riding-bicycle-3748547.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+/*EQUIPE*/
+@media (min-width: 320px) {
+  .equipe {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/water-outdoor-rock-girl-woman-photography-countryside-sunlight-flower-wet-cute-river-model-young-romance-asia-bare-lifestyle-smile-thailand-life-farmer-bathtub-the-world-the-village-face-outside-dress-happy-h.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+/*GALERIA*/
+@media (min-width: 320px) {
+  .galeria {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/woman-wearing-gray-mock-neck-sweater-789305.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+/*CONTATO*/
+@media (min-width: 320px) {
+  .contato {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/woman-sitting-on-grass-holding-flowers-wearing-black-hoodie-1007877.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
